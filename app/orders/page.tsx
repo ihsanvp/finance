@@ -249,7 +249,7 @@ export default function Products() {
                 </div>
                 <div className="w-full h-px my-3"></div>
                 {orders.map(order => (
-                    <div className="grid grid-cols-5 py-3 px-5 hover:bg-neutral-900 rounded-md">
+                    <div key={order.id} className="grid grid-cols-5 py-3 px-5 hover:bg-neutral-900 rounded-md">
                         <div className="col-span-1 opacity-60">#{order.id}</div>
                         <div className="col-span-2 opacity-60">{order.items.length}</div>
                         <div className="col-span-2 opacity-60">{order.amount}</div>
